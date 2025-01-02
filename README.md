@@ -1,50 +1,29 @@
-# Welcome to your Expo app 👋
+Description of Key Folders and Files
+1. assets/
+Store all static resources like images, fonts, or videos.
+Helps organize the project and makes it easier to manage assets.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+2. components/
+For reusable UI components like buttons, form inputs, etc.
+Example: If you have a custom button for the "Sign In" and "Sign Up" actions, put it here.
 
-## Get started
+3. screens/
+Each screen corresponds to a page in your app (e.g., Sign In, Sign Up).
+It keeps your project modular and organized.
 
-1. Install dependencies
+4. navigation/
+Store all navigation-related logic here (e.g., stack or tab navigators).
+Example: AppNavigator.js to manage navigation between the SignIn and SignUp screens.
 
-   ```bash
-   npm install
-   ```
+5. constants/
+Define shared constants such as color themes, font sizes, or API endpoints.
 
-2. Start the app
+6. utils/
+Utility functions or helpers such as form validation, date formatting, or API requests.
 
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+7. Root Files
+App.js: Entry point for your app. Sets up navigation and renders the main app.
+app.json: Configuration file for Expo (e.g., app name, icon).
+babel.config.js: Babel configuration required for Expo.
+package.json: Contains the list of dependencies for your app.
+tsconfig.json (if TypeScript is used): Configures TypeScript for your project.
